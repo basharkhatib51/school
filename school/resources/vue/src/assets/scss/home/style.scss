@@ -1,0 +1,345 @@
+$background-color: #ffffff;
+$background-color-opacity: #082465;
+$color: #ffc107;
+
+html.home {
+    height: 100%;
+
+    .btn .btn-primary {
+        color: $background-color
+    }
+
+    .product-img, .page-img, .post-img {
+        max-width: -webkit-fill-available;
+        border-radius: 25px;
+        border: 0px solid #dac107;
+        box-shadow: 0px 0px 20px -2px #dac107;
+    }
+
+    .post-content {
+        display: block;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    span img {
+        width: 100%;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    .files-download {
+        width: 200px;
+        position: relative;
+    }
+
+    .download-hover {
+        background-color: #ffc10755;
+        padding: 10px;
+        width: 100%;
+        border-radius: 25px;
+        text-align: center;
+        position: absolute;
+        height: -webkit-fill-available;
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+
+    .download-hover:hover {
+        opacity: 1;
+
+    }
+
+    .bars-icon {
+        color: $color;
+        border: 1px solid $color;
+        padding: 4px 6px;
+        font-size: 1.5rem;
+    }
+
+    .fas-bars-icon {
+        display: block;
+    }
+
+    .fas-times-icon {
+        display: none;
+
+    }
+
+    .not-collapsed .fas-bars-icon {
+        display: none;
+    }
+
+    .not-collapsed .fas-times-icon {
+        display: block;
+
+    }
+
+    #loading-bg {
+        background-color: #182023cc
+    }
+
+    #app {
+        background-image: url('~@/assets/images/pages/home/schoolBackground.svg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: unset !important;
+        min-height: -webkit-fill-available !important;
+    }
+
+    body, body.dark-layout, .dark-layout .dropdown-menu,
+    .swal2-container .swal2-modal,
+    .dropdown-menu, .modal .modal-header, .modal .modal-header[class*=bg-] {
+        background-color: $background-color !important;
+    }
+
+    .dark-layout .vs__dropdown-toggle, .vs__dropdown-toggle, .dark-layout .vs__dropdown-menu, .vs__dropdown-menu {
+        background-color: $background-color !important;
+    }
+
+    .dark-layout .swal2-container .swal2-modal .swal2-header .swal2-success-circular-line-left, .dark-layout .swal2-container .swal2-modal .swal2-header .swal2-success-circular-line-right, .swal2-container .swal2-modal .swal2-header .swal2-success-fix, .swal2-container .swal2-modal .swal2-header .swal2-animate-success-icon {
+        background-color: $background-color !important;
+    }
+
+    .modal .modal-content, .modal .modal-body, .modal .modal-footer,
+    .modal .modal-header .close,
+    {
+        background-color: $background-color-opacity !important;
+    }
+
+    .card-list {
+        .card {
+            width: 100%;
+            min-height: 300px;
+            border-radius: 25px;
+            background-color: $background-color-opacity;
+            border: 1px solid #ffc10733
+        }
+
+        .card > img {
+            border-radius: 25px 25px 0 0;
+        }
+
+        .card:hover {
+            box-shadow: $color 0 0 9px -3px
+        }
+
+        .card-title {
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $color;
+            //background-color: #ffc10711;
+            padding: 5px;
+            border-radius: 25px;
+        }
+
+        .card-hover:hover {
+            opacity: 1;
+        }
+
+        .card-hover {
+            transition: 0.4s;
+            display: block;
+            opacity: 0;
+            position: absolute;
+            background: #000000cc;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+        .card-hover-title {
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $color;
+            padding: 5px;
+            border-radius: 25px;
+        }
+
+        .card-content {
+            color: $color;
+            overflow: hidden;
+            height: 60%;
+        }
+    }
+
+
+    .slider-logo {
+        padding: 20px;
+    }
+
+    .slider-logo img, .slider-logo {
+        transition: 1s;
+    }
+
+    .slider-logo img {
+        width: 30%;
+    }
+
+    .slider-logo:hover img {
+        transform: rotateX(360deg);
+        //transform: translate(220px,0px);
+        box-shadow: $color 0 0 30px 6px;
+        width: 40%;
+    }
+
+    .slider {
+        margin: 0px;
+    }
+
+    .dark-layout .custom-control-input:not(:checked) ~ .custom-control-label:before {
+        background-color: $background-color;
+        border-color: $background-color-opacity;
+    }
+
+    .dark-layout .card, .dark-layout .auth-wrapper .auth-bg, .auth-wrapper .auth-bg {
+        background-color: $background-color-opacity;
+    }
+
+    .dark-layout input.form-control:not(:focus), .dark-layout .custom-file-label:not(:focus), .dark-layout textarea.form-control:not(:focus) {
+        border-color: $background-color;
+    }
+
+    .dark-layout input.form-control, .dark-layout .custom-file-label, .dark-layout textarea.form-control {
+        background-color: $background-color;
+    }
+
+    .details-table td {
+        border: 1px solid $color;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .details-table-header {
+        background-color: $color;
+        color: $background-color;
+    }
+
+    .navbar-logo {
+        height: 40px;
+    }
+
+    .waves {
+        background-image: url("~@/assets/images/pages/home/wave.svg");
+        min-height: 210px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .child-cursor-pointer {
+        cursor: pointer;
+    }
+    .min-slider{
+        background-image: url("~@/assets/images/HomeImage/min-slider.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: contain;
+        height: 29vh;
+        position: relative;
+    } .hidden-slider{
+        height: 15vh;
+    }
+    .AboutComponent h1.head{
+        color: #082465;
+        font-weight: bold;
+        text-align: center;
+    }
+    .AboutComponent .about-content{
+        color: #000000;
+    }
+    .ContactUsComponent .form-label-group input {
+        border: 1px solid #082465 !important;
+        color: #000000 !important;
+    }
+    .ContactUsComponent .form-label-group textarea {
+        border: 1px solid #082465 !important;
+        color: #000000 !important;
+    }
+    .ContactUsComponent .form-label-group label {
+        color: #FFC925!important;
+    }
+    .ContactUsComponent .ContactHeader{
+        color: #082465 !important;
+        font-weight: bold;
+    }
+    .ContactUsComponent .ContactBackground{
+        background-image: url("~@/assets/images/HomeImage/shape-2.png");
+        background-repeat: no-repeat;
+        background-size: 14%;
+        background-position:right center;
+    }
+    .policy-component h1.head{
+        color: #ffc107;
+        font-size: xxx-large;
+    }
+    .PostsComponent .horizontal-line{
+        border-top: 1px solid #ffc107;
+    }
+    .PostsComponent .postContent{
+        font-size: 16px;
+    }
+    .TeacherComponent h1.head{
+        color: #082465;
+        font-weight: bold;
+        text-align: center;
+    }
+    .TeacherComponent .teacher-content{
+        color: #000000;
+    }
+    .TeacherComponent .teacherimage{
+        border-radius: 50%;
+        max-width: 50%;
+    }
+    .HomeContactUsComponent .form-label-group input {
+        border: 1px solid #082465 !important;
+        color: #000000 !important;
+    }
+    .HomeContactUsComponent .form-label-group textarea {
+        border: 1px solid #082465 !important;
+        color: #000000 !important;
+    }
+    .HomeContactUsComponent .form-label-group label {
+        color: #FFC925!important;
+    }
+    .HomeContactUsComponent .ContactHeader{
+        color: #082465 !important;
+        font-weight: bold;
+    }
+    .HomeContactUsComponent .ContactBackground{
+        background-image: url("~@/assets/images/HomeImage/shape-2.png");
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position:right center;
+    }
+    .HomePostComponent .horizontal-line{
+        border-top: 1px solid #ffc107;
+    }
+    .HomePostComponent .postContent{
+        font-size: 16px;
+    }
+    .HomeTeacherComponent h1.head{
+        color: #082465;
+        font-weight: bold;
+        text-align: center;
+    }
+    .HomeTeacherComponent .teacher-content{
+        color: #000000;
+    }
+    .HomeTeacherComponent .teacherimage{
+        border-radius: 50%;
+        max-width: 50%;
+    }
+    .services{
+        color: #ffc107;
+    }
+    .navIsScrolled .ml-50.text-body{
+        color: #fff !important;
+    }
+}
